@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.anaMenuFragment">
+
+    <Button
+        android:id="@+id/musterilerButton"
+        android:layout_width="305dp"
+        android:layout_height="67dp"
+        android:layout_marginTop="100dp"
+        android:onClick="musterilerButtonClicked"
+        android:text="Müşteriler"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/tamamlandiButton"
+        android:layout_width="305dp"
+        android:layout_height="67dp"
+        android:layout_marginTop="10dp"
+        android:onClick="tamamlandiButtonClicked"
+        android:text="Tamamlandı"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/islemdekilerButton" />
+
+    <Button
+        android:id="@+id/siparislerButton"
+        android:layout_width="305dp"
+        android:layout_height="67dp"
+        android:layout_marginTop="10dp"
+        android:onClick="siparislerButtonClicked"
+        android:text="Siparişler"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.485"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/musterilerButton" />
+
+    <Button
+        android:id="@+id/gelirGiderTakipButton"
+        android:layout_width="305dp"
+        android:layout_height="67dp"
+        android:layout_marginTop="10dp"
+        android:onClick="gelirGiderTakipButtonClicked"
+        android:text="Gelir-Gider Takip"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ozetlerButton" />
+
+    <Button
+        android:id="@+id/aramaGecmisiButton"
+        android:layout_width="305dp"
+        android:layout_height="67dp"
+        android:layout_marginTop="10dp"
+        android:onClick="aramaGecmisiButtonClicked"
+        android:text="Arama Geçmişi"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.485"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tamamlandiButton" />
+
+    <Button
+        android:id="@+id/islemdekilerButton"
+        android:layout_width="305dp"
+        android:layout_height="67dp"
+        android:layout_marginTop="10dp"
+        android:onClick="islemdekilerButtonClicked"
+        android:text="İşlemdekiler"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gelirGiderTakipButton" />
+
+    <Button
+        android:id="@+id/ozetlerButton"
+        android:layout_width="305dp"
+        android:layout_height="67dp"
+        android:layout_marginTop="10dp"
+        android:onClick="ozetlerButtonClicked"
+        android:text="Özetler"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/siparislerButton" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+

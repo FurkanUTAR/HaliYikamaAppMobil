@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/girisYapFragment">
+
+    <fragment
+        android:id="@+id/girisYapFragment"
+        android:name="com.example.haliyikamaapp.view.girisYapFragment"
+        android:label="fragment_giris_yap"
+        tools:layout="@layout/fragment_giris_yap" >
+        <action
+            android:id="@+id/action_girisYapFragment_to_kayitOlFragment"
+            app:destination="@id/kayitOlFragment" />
+        <action
+            android:id="@+id/action_girisYapFragment_to_anaMenuViewPager"
+            app:destination="@id/anaMenuViewPager" />
+    </fragment>
+    <fragment
+        android:id="@+id/kayitOlFragment"
+        android:name="com.example.haliyikamaapp.view.kayitOlFragment"
+        android:label="fragment_kayit_ol"
+        tools:layout="@layout/fragment_kayit_ol" >
+        <action
+            android:id="@+id/action_kayitOlFragment_to_girisYapFragment"
+            app:destination="@id/girisYapFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/anaMenuViewPager"
+        android:name="com.example.haliyikamaapp.view.anaMenuViewPager"
+        android:label="fragment_ana_menu_view_pager"
+        tools:layout="@layout/fragment_ana_menu_view_pager" >
+        <action
+            android:id="@+id/action_anaMenuViewPager_to_musterilerFragment"
+            app:destination="@id/musterilerFragment" />
+        <action
+            android:id="@+id/action_anaMenuViewPager_to_islemdekilerFragment"
+            app:destination="@id/islemdekilerFragment" />
+        <action
+            android:id="@+id/action_anaMenuViewPager_to_siparislerFragment"
+            app:destination="@id/siparislerFragment" />
+        <action
+            android:id="@+id/action_anaMenuViewPager_to_tamamlananSiparislerFragment"
+            app:destination="@id/tamamlananSiparislerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/musterilerFragment"
+        android:name="com.example.haliyikamaapp.view.musterilerFragment"
+        android:label="fragment_musteriler"
+        tools:layout="@layout/fragment_musteriler" />
+    <fragment
+        android:id="@+id/islemdekilerFragment"
+        android:name="com.example.haliyikamaapp.view.islemdekilerFragment"
+        android:label="fragment_islemdekiler"
+        tools:layout="@layout/fragment_islemdekiler" />
+    <fragment
+        android:id="@+id/siparislerFragment"
+        android:name="com.example.haliyikamaapp.view.siparislerFragment"
+        android:label="fragment_siparisler"
+        tools:layout="@layout/fragment_siparisler" />
+    <fragment
+        android:id="@+id/tamamlananSiparislerFragment"
+        android:name="com.example.haliyikamaapp.view.tamamlananSiparislerFragment"
+        android:label="fragment_tamamlanan_siparisler"
+        tools:layout="@layout/fragment_tamamlanan_siparisler" />
+</navigation>
